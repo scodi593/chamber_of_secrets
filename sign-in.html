@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login | By Code Info</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="" />
+        <label>Password</label>
+        <input type="password" placeholder="" />
+        <input type="button" value="Submit" />
+        <closeform></closeform>
+      </form>
+    </div>
+    <p class="para-2">
+      Not have an account? <a href="sign-up.html">Sign Up Here</a>
+    </p>
+    <script>  
+      function validateemail()  
+      {  
+      var x=document.Email.email.value;  
+      var atposition=x.indexOf("@");  
+      var dotposition=x.lastIndexOf(".");  
+      if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+        alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+        return false;  
+        }  
+      }  
+      </script>  
+      <body>  
+      <form name="Email"  method="post" action="" onsubmit="return validateemail();">  
+         
+      </form>
+  </body>
+</html>
